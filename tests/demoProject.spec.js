@@ -101,5 +101,8 @@ await loginButton.click()
 locatorCustom('base Test',async({page,loginFunction})=>{
 
     await loginFunction('standard_user','secret_sauce')
+
+
+    
 })
 
