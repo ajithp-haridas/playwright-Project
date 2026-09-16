@@ -1,0 +1,43 @@
+[{"username":"standard_user",
+
+"password":"secret_sauce",
+
+"firstname":"abc",
+"lastname":"test",
+"zipcode":"423536",
+
+"myProduct":"Sauce Labs Fleece Jacket"
+},
+{"username":"standard_user",
+
+"password":"secret_sauce",
+
+"firstname":"ajith",
+"lastname":"p",
+"zipcode":"234566",
+
+"myProduct":"Sauce Labs Onesie"
+},
+{"username":"standard_user",
+
+"password":"secret_sauce",
+
+"firstname":"Robin",
+"lastname":"george",
+"zipcode":"6474799",
+
+"myProduct":"Sauce Labs Bike Light"
+},
+{"username":"standard_user",
+
+"password":"secret_sauce",
+
+"firstname":"Binoy",
+"lastname":"testing",
+"zipcode":"987654",
+
+"myProduct":"Sauce Labs Backpack"
+}
+
+]
+
