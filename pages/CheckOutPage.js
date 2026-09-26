@@ -1,4 +1,5 @@
-const{expect}=require('@playwright/test')
+//const{expect}=require('@playwright/test')
+import {expect} from '@playwright/test'
 export class CheckOutPage{
 
     constructor(page){

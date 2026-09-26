@@ -1,6 +1,6 @@
 import {test,expect} from "@playwright/test"
 
-test('radioButtonDemo',async ({page})=>{
+test('@Login radioButtonDemo',async ({page})=>{
 
 await page.goto('https://selenium.qabible.in/index.php')
 

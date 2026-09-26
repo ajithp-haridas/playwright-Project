@@ -1,7 +1,7 @@
-import {CheckOutPage} from "./CheckOutPage"
-import { LoginPage } from "./LoginPage"
-import { CartPage } from "./CartPage"
-import { ProductPage } from "./ProductPage"
+import {CheckOutPage} from "./CheckOutPage.js"
+import { LoginPage } from "./LoginPage.js"
+import { CartPage } from "./CartPage.js"
+import { ProductPage } from "./ProductPage.js"
 
 export class PomManager{
 

@@ -8,7 +8,7 @@
 
 import {test,expect} from "@playwright/test";
 
-test('empty test',async ({page})=>{
+test('@Login empty test',async ({page})=>{
 
 await page.goto('https://www.saucedemo.com/')
 

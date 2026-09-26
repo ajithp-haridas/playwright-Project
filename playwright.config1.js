@@ -45,7 +45,7 @@ export default defineConfig({
    video:"retain-on-failure",
    trace:"retain-on-failure",
    browserName:'firefox',
-   ...devices['iPhone 12'],
+   //...devices['iPhone 12'],
    permissions:['geolocation','camera','microphone'],
    //geolocation:{latitude:9.29,longitude:7.82}
   ignoreHTTPSErrors:true

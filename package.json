@@ -3,23 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type":"module",
   "scripts": {
-    "test":"npx playwright test",
-    "headed":"npx playwright test --headed",
-    "uiMode":"npx playwright test --ui",
-    "config":"npx playwright test --config=playwright.config1.js",
-    "chrome":"npx playwright test --project=chromeProject",
-    "firefox":"npx playwright test --project=firefoxProject",
-    "webkit":"npx playwright test --project=webKitProject"
+    "test": "npx playwright test",
+    "headed": "npx playwright test --headed",
+    "uiMode": "npx playwright test --ui",
+    "config": "npx playwright test --config=playwright.config1.js",
+    "chrome": "npx playwright test --project=chromeProject",
+    "firefox": "npx playwright test --project=firefoxProject",
+    "webkit": "npx playwright test --project=webKitProject",
+    "allure-generate": "npx allure generate allure-results",
+    "allure-open": "npx allure open allure-report",
+    "allure": "npx playwright test && npx allure generate allure-results && npx allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.1.2"
+    "@types/node": "^26.1.2",
+    "allure-playwright": "^3.12.2"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^13.2.1",
     "exceljs": "^4.4.0"
   }
 }
