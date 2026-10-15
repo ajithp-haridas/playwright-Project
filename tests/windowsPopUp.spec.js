@@ -17,7 +17,7 @@ const [newPage]=await Promise.all([
     page.waitForEvent('popup'), //wait for new page
     faceBookLinkButton.click() //click button for new page
 ])
-await page.waitForLoadState()
+await page.waitForLoadState() //race condition for new page to load
 console.log(await newPage.title())
 
 await newPage.getByLabel('Email address or phone number').fill("abcd");

@@ -23,10 +23,11 @@ export default defineConfig({
   //fullyParallel:true,
  
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  //reporter: 'html',
-  reporter:[
+  reporter: 'html',
+  /*reporter:[
     ["allure-playwright"]
-  ],
+  ],*/
+  
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   
   projects:[
@@ -37,7 +38,11 @@ export default defineConfig({
    screenshot:'only-on-failure',
    video:"retain-on-failure",
    trace:"retain-on-failure",
-   browserName:'chromium'
+   browserName:'chromium',
+   ignoreHTTPSErrors:true,
+   permissions:['geolocation','notifications','camera','microphone']
+   //geolocation:{latitude:12.9716,longitude:77.5946}
+   //viewport:{width:500,height:500}
   },
     },
     {
@@ -47,7 +52,8 @@ export default defineConfig({
    screenshot:'only-on-failure',
    video:"retain-on-failure",
    trace:"retain-on-failure",
-   browserName:'firefox'
+   browserName:'firefox',
+   
   },
     },
 

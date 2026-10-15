@@ -5,7 +5,7 @@ import {locatorCustom} from "../utils/baseTest.js"
 
 test.skip('DemoProject',async ({page})=>{
 
-await page.goto('https://www.saucedemo.com/')
+await page.goto('https://www.saucedemo.com/',{waitUntil:'networkidle'}) //race condition
 
 const userName=page.locator('#user-name')
 await userName.fill('standard_user')
